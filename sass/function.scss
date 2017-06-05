@@ -1,0 +1,12 @@
+@function p2r($s) {
+    @return $s/18*1rem;
+}
+
+@mixin size($w, $h) {
+    width: p2r($w);
+    height: p2r($h);
+}
+
+@mixin bg($url) {
+    background: url($url) no-repeat center/100% 100%;
+}
